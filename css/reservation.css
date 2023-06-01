@@ -1,7 +1,14 @@
 *{margin: 0; padding: 0; box-sizing: border-box; color: #333;}
 ul, li{list-style: none;}
 a{text-decoration: none; color: inherit;}
-img{vertical-align: middle;}
+img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
 .flex{display: flex;}
 .grid{display: grid;}
 .none{display: none;}
+
+#app{padding: 20px;}
+
+#app header .header_container{width: 1600px; margin: 0 auto;}
+#app header .header_container .arrow_btn{display: flex; width: 45px; height: 45px; border-radius: 50%; justify-content: center; align-items: center; cursor: pointer; transition: all .3s;}
+#app header .header_container .arrow_btn:hover{background-color: #eee;}
+#app header .header_container .arrow_btn img{width: 100%; height: auto; padding: 10px;}
