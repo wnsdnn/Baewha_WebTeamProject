@@ -1,4 +1,25 @@
-*{margin: 0; padding: 0; box-sizing: border-box; color: #333;}
+@font-face {
+    font-family: 'LINESEED';
+    src: url('../resource/font/LINESeedKR-Th.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESEED';
+    src: url('../resource/font/LINESeedKR-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESEED';
+    src: url('../resource/font/LINESeedKR-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box; color: #333; font-family: "LINESEED";}
 ul, li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
@@ -6,9 +27,44 @@ img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
 .grid{display: grid;}
 .none{display: none;}
 
-#app{padding: 20px;}
+/* #app{padding: 20px;} */
 
-#app header .header_container{width: 1600px; margin: 0 auto;}
-#app header .header_container .arrow_btn{display: flex; width: 45px; height: 45px; border-radius: 50%; justify-content: center; align-items: center; cursor: pointer; transition: all .3s;}
-#app header .header_container .arrow_btn:hover{background-color: #eee;}
-#app header .header_container .arrow_btn img{width: 100%; height: auto; padding: 10px;}
+#app header .header_container{width: 100%; height: 70px; padding: 10px 0 0 20px; border-bottom: 1px solid #eee;}
+#app header .header_container .logo{width: 150px; height: 100%;}
+
+#app main{display: flex; width: 800px; margin: 0 auto; padding: 70px 0; flex-direction: column; gap: 25px;}
+#app main .title{display: flex; align-items: flex-start; gap: 8px;}
+#app main .title h3{font-size: 30px; line-height: 50px;}
+#app main .title .arrow_btn{display: flex; width: 40px; height: 40px; border-radius: 50%; justify-content: center; align-items: center; cursor: pointer; transition: all .3s;}
+#app main .title .arrow_btn:hover{background-color: #efefef;}
+#app main .title .arrow_btn img{width: 100%; height: auto; padding: 10px;}
+
+
+
+#app main .information{height: auto; border: 1px solid #ddd; border-radius: 8px; padding: 24px 30px;}
+#app main .information .line{width: 100%; height: 1px; margin: 10px auto; background-color: #ddd;}
+#app main .information article{}
+#app main .information .room_information_title{font-size: 18px;}
+#app main .information .room_information_title span{font-size: 15px; color: #aaa;}
+
+
+#app main .information .room_information{display: grid; grid-template-columns: auto 450px; height: auto;  align-items: flex-start; overflow: hidden;}
+#app main .information .room_information .room_img{display: flex; width: 100%; height: 200px; align-items: center;}
+#app main .information .room_information .room_img img{width: 100%; height: auto; max-height: 160  5px; object-fit: contain; border-radius: 8px;}
+#app main .information .room_information .info_content{padding: 15px 25px;}
+#app main .information .room_information .info_content h4{font-size: 24px;}
+#app main .information .room_information .info_content h5{font-size: 14px; font-weight: normal;}
+#app main .information .room_information .info_content p{margin-top: 15px; font-size: 15px;}
+
+#app main .information .rate_information{height: auto; padding: 10px 0;}
+#app main .information .rate_information .title h3{font-size: 20px;}
+
+#app main .information .rate_information .rate_content_list.discount{margin-top: 40px;}
+#app main .information .rate_information .rate_content_list.discount h4{color: #ff0000;}
+#app main .information .rate_information .rate_content_list .rate_content{display: flex; margin-top: 10px; justify-content: space-between;}
+
+#app main .information .total_rate{padding: 20px 0 0;}
+#app main .information .total_rate .totalrate_content{display: flex; justify-content: space-between;}
+
+
+
