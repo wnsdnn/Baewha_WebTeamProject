@@ -27,11 +27,12 @@ img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
 .grid{display: grid;}
 .none{display: none;}
 
-/* #app{padding: 20px;} */
+#app{padding-bottom: 170px;}
 
 #app header .header_container{width: 100%; height: 70px; padding: 10px 0 0 20px; border-bottom: 1px solid #eee;}
 #app header .header_container .logo{width: 150px; height: 100%;}
 
+/* 예약자 정보 확인 및 결제 부분 */
 #app main{display: flex; width: 800px; margin: 0 auto; padding: 70px 0; flex-direction: column; gap: 25px;}
 #app main .title{display: flex; align-items: flex-start; gap: 8px;}
 #app main .title h3{font-size: 30px; line-height: 50px;}
@@ -41,6 +42,7 @@ img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
 
 
 
+/* 예약할 방정보 */
 #app main .information{height: auto; border: 1px solid #ddd; border-radius: 8px; padding: 24px 30px;}
 #app main .information .line{width: 100%; height: 1px; margin: 10px auto; background-color: #ddd;}
 #app main .information article{}
@@ -56,6 +58,7 @@ img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
 #app main .information .room_information .info_content h5{font-size: 14px; font-weight: normal;}
 #app main .information .room_information .info_content p{margin-top: 15px; font-size: 15px;}
 
+
 #app main .information .rate_information{height: auto; padding: 10px 0;}
 #app main .information .rate_information .title h3{font-size: 20px;}
 
@@ -63,8 +66,39 @@ img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
 #app main .information .rate_information .rate_content_list.discount h4{color: #ff0000;}
 #app main .information .rate_information .rate_content_list .rate_content{display: flex; margin-top: 10px; justify-content: space-between;}
 
+
+/* 예약자 정보 확인 */
 #app main .information .total_rate{padding: 20px 0 0;}
 #app main .information .total_rate .totalrate_content{display: flex; justify-content: space-between;}
 
+#app main .user_information{margin-top: 70px;}
+#app main .user_information .title{padding: 8px 0; border-bottom: 1px solid #ccc;}
+#app main .user_information .title h3{font-size: 25px;}
+
+#app main .user_information .userinfo_container{display: flex; padding: 50px 0; flex-direction: column; gap: 60px;}
+#app main .user_information .userinfo_container .user_info{display: flex; flex-direction: column; align-items: flex-start; gap: 10px;}
+#app main .user_information .userinfo_container .user_info h4{font-size: 20px;}
+#app main .user_information .userinfo_container .user_info input{width: 300px; height: 30px; padding: 0 8px; border: 0; outline: none; border-bottom: 1px solid #ccc; font-size: 15px;}
+
+
+/* 결제수단 */
+#app main .payment_method{margin-top: 30px;}
+#app main .payment_method .title{padding: 8px 0;}
+#app main .payment_method .title h3{font-size: 25px;}
+#app main .payment_method .payment_container{display: grid; grid-template-columns: repeat(3, 1fr); padding: 0 0 30px 0; gap: 10px;}
+#app main .payment_method .payment_container>div{display: flex; justify-content: center; align-items: center; height: 170px; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all .3s;}
+#app main .payment_method .payment_container>div:hover{background-color: #eee;}
+#app main .payment_method .payment_container>div.kakao .icon{padding-top: 15px;}
+#app main .payment_method .payment_container>div.kakao .icon img{height: 30px;}
+#app main .payment_method .payment_container .icon{display: flex; height: 80px; justify-content: space-between; flex-direction: column; align-items: center; gap: 10px;}
+#app main .payment_method .payment_container>div .icon img{height: 50px; object-fit: contain;}
+
+
+
+
+/* 결제하기 버튼 */
+#app main .btn{display: flex; justify-content: flex-end;}
+#app main .btn .pay_btn{width: 85px; height: 35px; padding-top: 3px; font-size: 16px; border: 0; background: #373aa1; color: #fff; border-radius: 3px; cursor: pointer; transition: all .3s;}
+#app main .btn .pay_btn:hover{background: #1d2088;}
 
 
