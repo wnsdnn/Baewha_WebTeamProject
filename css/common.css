@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'LINESEED';
+    src: url('../resource/font/LINESeedKR-Th.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESEED';
+    src: url('../resource/font/LINESeedKR-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESEED';
+    src: url('../resource/font/LINESeedKR-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box; color: #333; font-family: "LINESEED";}
+ul, li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
+.flex{display: flex;}
+.grid{display: grid;}
+.none{display: none;}

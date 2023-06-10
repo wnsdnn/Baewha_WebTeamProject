@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/categoryList.css">
+</head>
+<body>
+    <div id="app">
+
+        <header>
+            <div class="back">
+                <a href="./home.html"><img src="./resource/img/back.png" alt="back"></a>
+            </div>
+            <div class="logo">
+                <img src="./resource/img/logo.png" alt="">
+            </div>
+            <div class="hotel">
+                <p>호텔</p>
+            </div>
+            <div class="mypage">
+                <button id="my"><a href="#"><img src="./resource/img/마이페이지.png" alt="사람"></a></button>
+            </div>
+        </header>
+        <select name='city' class="city">
+            <option value='' selected>--지역 이름--</option>
+            <option value='서울'>서울</option>
+            <option value='경기'>경기</option>
+            <option value='인천'>인천</option>
+            <option value='강원'>강원</option>
+            <option value='제주'>제주</option> 
+            <option value='대전'>대전</option>
+            <option value='충북'>충북</option>
+            <option value='충남/세종'>충남/세종</option>
+            <option value='부산'>부산</option>
+            <option value='울산'>울산</option>
+            <option value='경남'>경남</option>
+            <option value='대구'>대구</option>
+            <option value='경북'>경북</option>
+            <option value='광주'>광주</option>
+            <option value='전남'>전남</option>
+            <option value='전주/전북'>전주/전북</option>
+        </select>
+        <div class="boxlist">
+            <div class="menu-box1">
+                <img id="num1" src="./resource/img/1.png" alt="">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            <div class="menu-box1">
+                <img id="num1" src="./resource/img/2.png" alt="">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            <div class="menu-box1">
+                <img id="num1" src="./resource/img/3.png" alt="">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            <div class="menu-box1">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            <div class="menu-box1">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            <div class="menu-box1">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            <div class="menu-box1">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            <div class="menu-box1">
+                <img id="hotel" src ="./resource/img/파라다이스시티.jpg" alt="">
+                <p id="hname">파라다이스시티 <br></p>
+                    <div class="starpoint_wrap">
+                        <div class="starpoint_box">
+                          <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                          <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                          <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                          <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                          <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                          <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                          <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                          <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                          <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                          <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                          <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                          <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                          <span class="starpoint_bg"></span>
+                        </div>
+                      </div>
+                <p id="hwon">1,139,000원</p>
+                <p id="haddress">인천광역시 중구 영종해안남로321번길 186</p>
+            </div>
+            
+            
+        </div>
+
+        <footer>
+            <div class="footer_container">
+                
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
