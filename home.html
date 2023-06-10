@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./resource/fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/home.css">
 </head>
@@ -13,7 +14,7 @@
         <header>
             <div class="header_container">
                 <div class="logo">
-                    <img src="./resource/img/logo.png" alt="logo_img">
+                    <img src="./resource/img/logo.png" alt="logo_img" onclick="location.href = 'home.html'">
                 </div>
             </div>
         </header>
@@ -25,27 +26,27 @@
                     <h2>카테고리를 선택해주세요</h2>
                 </div>
                 <article class="category_container">
-                    <div class="category">
+                    <div class="category" onclick="location.href='categoryList.html'">
                         <img src="./resource/img/hotel.png" alt="">
                         <h4>호텔</h4>
                     </div>
-                    <div class="category">
+                    <div class="category" onclick="location.href='categoryList.html'">
                         <img src="./resource/img/pension.png" alt="">
                         <h4>펜션</h4>
                     </div>
-                    <div class="category">
+                    <div class="category" onclick="location.href='categoryList.html'">
                         <img src="./resource/img/camping.png" alt="">
                         <h4>캠핑</h4>
                     </div>
-                    <div class="category">
+                    <div class="category" onclick="location.href='categoryList.html'">
                         <img src="./resource/img/resort.png" alt="">
                         <h4>리조트</h4>
                     </div>
-                    <div class="category">
+                    <div class="category" onclick="location.href='categoryList.html'">
                         <img src="./resource/img/motel.png" alt="">
                         <h4>모텔</h4>
                     </div>
-                    <div class="category">
+                    <div class="category" onclick="location.href='categoryList.html'">
                         <img src="./resource/img/studio.png" alt="">
                         <h4>스튜디오</h4>
                     </div>
@@ -65,7 +66,36 @@
 
         </main>
 
-        <footer></footer>
+        <footer>
+            <div class="footer_container">
+                <div class="logo">
+                    <img src="./resource/img/logo.png" alt="">
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>호텔</li>
+                        <li>펜션</li>
+                        <li>캠핑</li>
+                        <li>리조트</li>
+                        <li>모텔</li>
+                        <li>스튜디오</li>
+                    </ul>
+                </div>
+
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright 2023. wnsdnn All pictures cannot be copied without permission.</p>
+                    <p>a honjaseo dijainhago mandeuneungeo jonna himdeulda syubal</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

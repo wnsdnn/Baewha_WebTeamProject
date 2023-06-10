@@ -30,3 +30,15 @@ img{width: 100%; height: 100%; vertical-align: middle; object-fit: cover;}
 
 #app header .header_container{width: 100%; height: 70px; padding: 10px 0 0 20px; border-bottom: 1px solid #ccc;}
 #app header .header_container .logo{width: 150px; height: 100%;}
+
+#app footer{padding: 20px;}
+#app footer .footer_container{display: flex; width: 100%; padding: 15px 0 0 20px; border-top: 1px solid #ccc; flex-direction: column; gap: 8px; align-items: center;}
+#app footer .footer_container .logo{width: 150px; height: 50px;}
+#app footer .footer_container .logo img{width: 100%; object-fit: contain;}
+#app footer .footer_container .menu ul{display: flex; gap: 25px;}
+#app footer .footer_container .menu ul li{font-weight: bold;}
+#app footer .footer_container .icons{display: flex; gap: 25px; margin: 20px 0 10px;}
+#app footer .footer_container .icons i{width: 30px; font-size: 25px; cursor: pointer; transition: all .3s;}
+#app footer .footer_container .icons i:hover{transform: scale(1.2);}
+
+#app footer .footer_container .copyright p{text-align: center;}

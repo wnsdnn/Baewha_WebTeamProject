@@ -1,318 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+#app main{display: flex; width: 800px; margin: 0 auto; padding: 30px 0 0; flex-direction: column; gap: 40px;}
 
-/*---------------------------------------------*/
-header {
-    border-bottom: 3px solid #62bbff;
-    height: 150px;
-    line-height: 150px;
-    text-align: right;
-}
 
-#header {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-#header .logo {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-}
-
-#header .logo img {
-    width: 200px;
-    height: 60.8px;
-}
-
-.search {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.search-form {
-    display: flex;
-    padding-top: 40px;
-}
-
-.search-input {
-    width: 600px;
-    height: 36px;
-    padding: 10px;
-    font-size: 16px;
-    border: 3px solid #62bbff82;
-    border-radius: 100px;
-    outline: none;
-}
-
-.buttons {
-    display: flex;
-    margin-left: -4px;
-}
-
-.search-button {
-    height: 60.8px;
-    margin-left: -60px;
-    padding: 0 16px;
-    border: 3px solid #62bbff82;
-    border-radius: 100px;
-    font-size: 14px;
-    background-color: #f8f9fa;
-    outline: none;
-    cursor: pointer;
-}
-
-/*---------------------------------------------*/
-
-/*---------------------------------------------*/
-#m_container {
-    width: 1000px;
-    margin: 0 auto;
-}
-
-/*---------------------------------------------*/
-
-/*---------------------------------------------*/
-#view {
-    position: relative;
-    border: 1px solid #62bbff;
-    overflow: hidden;
-    width: 850px;
-    height: 542px;
-    margin: 30px auto;
-}
-
-#view img {
-    width: 850px;
-    height: 542px;
-}
+#view {position: relative; border: 1px solid #1d2088; overflow: hidden; width: 100%; height: 480px; margin: 30px auto; border-radius: 8px; overflow: hidden;}
+#view ul{width: 100%; height: 100%;}
+#view ul li{width: 100%; height: 100%;}
+#view img {width: 100%; height: 100%;}
 
 #view .next,
-.prev {
-    position: absolute;
-    top: 50%;
-}
+#view .prev{position: absolute; top: 50%; transform: translateY(-50%);}
 
-#view .next {
-    right: 0;
-}
+#view .next {right: 0;}
+#view .prev {left: 0;}
+#view .next img {width: 100px; height: 100px;}
+#view .prev img {width: 100px; height: 100px;}
 
-#view .prev {
-    left: 0;
-}
+.slide {list-style: none; width: d;}
+.slide li {width: 500px; float: left;}
+.slide li img {width: 100%;}
 
-#view .next img {
-    width: 100px;
-    height: 100px;
-}
+#m_img button {position: absolute; top: 50%; transform: translateY(-50%); padding: 5px; cursor: pointer;}
+#m_img button.prev {left: 20px;}
+#m_img button.next {right: 20px;}
 
-#view .prev img {
-    width: 100px;
-    height: 100px;
-}
+#dot {text-align: center;}
+#dot>ul>li {display: inline-block; margin: 10px; width: 50px; height: 5px; background: gray; cursor: pointer;}
+#dot>ul li a {display: block}
 
-.slide {
-    list-style: none;
-    width: 2500px;
-}
+#dot ul li.on {background: #05d685;}
+#dot img {width: 150px; height: 50px;}
 
-.slide li {
-    width: 500px;
-    float: left;
-}
+.thumbnail-gallery {overflow: hidden;}
 
-.slide li img {
-    width: 100%;
-}
+#s_img {justify-content: center; padding: 30px; height: 100px; display: flex; flex-wrap: wrap;}
+#s_img img {width: 200px; height: 100px; padding: 5px;}
 
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px;
-    cursor: pointer;
-}
 
-button.prev {
-    left: 20px;
-}
 
-button.next {
-    right: 20px;
-}
+#h_name {width: 100%; margin: 0 auto; height: 80px; border: 1px solid #1d2088; border-top-right-radius: 30px; border-top-left-radius: 30px;}
+#h_name .name {display: flex; height: 100%; justify-content:space-between; align-items: center; padding: 0 20px;}
+#h_name .name h2 {font-size: 30px;}
+.rating {font-size: 20px;}
+.rating p{width: 150px;}
+#h_name .rating img {width: 100%; object-fit: contain;}
+#h_name .address {font-size: 20px; height: 40px;}
+.address img {width: 20px; height: 20px; line-height: 20px;}
+.address a {text-decoration: none;}
 
-#dot {
-    text-align: center;
-}
+#r_content {width: 100%; margin-top: 10px; border: 1px solid #1d2088;}
+#r_content .configuration {padding: 10px; font-size: 17px;}
+.configuration div {padding: 10px;}
+#tip_box {width: 100%; height: 550px; margin-top: 10px; border: 1px solid #1d2088; border-bottom-right-radius: 30px; border-bottom-left-radius: 30px;}
+#tip_box .tips {padding: 20px; height: 100px;}
+#tip_box h3 {margin: 10px;}
 
-#dot>ul>li {
-    display: inline-block;
-    margin: 10px;
-    width: 50px;
-    height: 5px;
-    background: gray;
-    cursor: pointer;
-}
-
-#dot>ul li a {
-    display: block
-}
-
-#dot ul li.on {
-    background: #05d685;
-}
-
-#dot img {
-    width: 150px;
-    height: 50px;
-}
-
-.thumbnail-gallery {
-    overflow: hidden;
-}
-
-#s_img {
-    justify-content: center;
-    padding: 30px;
-    height: 100px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#s_img img {
-    width: 200px;
-    height: 100px;
-    padding: 5px;
-}
-
-/*---------------------------------------------*/
-
-#h_name {
-    width: 1000px;
-    margin: 0 auto;
-    height: 80px;
-    border: 1px solid #62bbff;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-}
-
-.name {
-    position: relative;
-    padding: 20px;
-}
-
-.name h2 {
-    font-size: 30px;
-}
-
-.rating {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 20px;
-}
-
-#h_name .rating img {
-    width: 200px;
-    height: 40px;
-}
-
-#h_name .address {
-    padding: 20px;
-    font-size: 20px;
-    height: 40px;
-}
-
-.address img {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-}
-
-.address a {
-    text-decoration: none;
-}
-
-/*-----------------------------------------------------*/
-
-/*----------------------------------------------*/
-#r_content {
-    width: 1000px;
-    height: 450px;
-    margin-top: 10px;
-    border: 1px solid #62bbff;
-}
-
-#r_content .configuration {
-    padding: 20px;
-    font-size: 17px;
-}
-
-.configuration div {
-    padding: 10px;
-}
-
-#tip_box {
-    width: 1000px;
-    height: 550px;
-    margin-top: 10px;
-    border: 1px solid #62bbff;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-#tip_box .tips {
-    padding: 20px;
-    height: 100px;
-}
-
-#tip_box h3 {
-    margin: 10px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-}
-
+table {width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;}
 th,
-td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
+td {padding: 10px; text-align: left; border-bottom: 1px solid #ddd;}
+th {background-color: #f2f2f2;}
+tr:last-child td {border-bottom: none;}
 
-th {
-    background-color: #f2f2f2;
-}
+.review_title{margin-top: 80px;}
+.review_title h3{font-size: 30px;}
 
-tr:last-child td {
-    border-bottom: none;
-}
+.review_container{display: flex; width: 100%; padding: 20px 0; flex-direction: column; gap: 15px;}
+.review_container .review{display: flex; padding: 15px; border: 1px solid #ccc; border-radius: 7px; overflow: hidden; flex-direction: column; gap: 10px;}
+.review_container .review .user_info{display: flex; align-items: center; gap: 10px;}
+.review_container .review .user_info i{width: 30px; height: 30px; text-align: center; line-height: 30px; font-size: 20px; border: 1px solid #333; border-radius: 50%;}
+.review_container .review .user_info h4{font-size: 17px;}
+.review_container .review .user_info p{font-size: 12px;}
 
-/*----------------------------------------------*/
 
-footer {
-    margin-top: 20px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 30px;
-    color: #fff;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
 
-footer p {
-    margin: 10px 0;
-}
 
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
+
+#app main .btn{display: flex; justify-content: flex-end;}
+#app main .btn .reservation_btn{width: 85px; height: 35px; padding-top: 3px; font-size: 16px; border: 0; background: #373aa1; color: #fff; border-radius: 3px; cursor: pointer; transition: all .3s;}
+#app main .btn .reservation_btn:hover{background: #1d2088;}

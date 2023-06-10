@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./resource/fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/reservation.css">
     <script src="./js/reservation.js"></script>
@@ -14,7 +15,7 @@
         <header>
             <div class="header_container">
                 <div class="logo">
-                    <img src="./resource/img/logo.png" alt="logo_img">
+                    <img src="./resource/img/logo.png" alt="logo_img" onclick="location.href = 'home.html'">
                 </div>
             </div>
         </header>
@@ -29,7 +30,8 @@
             </section>
             <section class="information">
                 <div class="room_information_title">
-                    <h3>예약할 방정보 <span>(이거 없는게 더 나을지도?)</span></h3> 
+                    <!-- <h3>예약할 방정보 <span>(이거 없는게 더 나을지도?)</span></h3>  -->
+                    <h3>예약할 방정보</h3> 
                 </div>
                 <article class="room_information">
                     <div class="room_img">
@@ -99,19 +101,19 @@
                         <h3>결제수단</h3>
                     </div>
                     <div class="payment_container">
-                        <div class="deposit">
+                        <div class="deposit payment">
                             <div class="icon">
                                 <img src="./resource/img/icon/bank_icon.png" alt="payment_image">
                                 <h4>무통장 입금</h4>
                             </div>
                         </div>
-                        <div class="kakao">
+                        <div class="kakao payment">
                             <div class="icon">
                                 <img src="./resource/img/icon/kakaopay_icon.png" alt="payment_image">
                                 <h4>카카오 페이</h4>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card payment">
                             <div class="icon">
                                 <img src="./resource/img/icon/card_icon.png" alt="payment_image">
                                 <h4>신용카드</h4>
@@ -128,9 +130,46 @@
         </main>
         <footer>
             <div class="footer_container">
-                
+                <div class="logo">
+                    <img src="./resource/img/logo.png" alt="">
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>호텔</li>
+                        <li>펜션</li>
+                        <li>캠핑</li>
+                        <li>리조트</li>
+                        <li>모텔</li>
+                        <li>스튜디오</li>
+                    </ul>
+                </div>
+
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright 2023. wnsdnn All pictures cannot be copied without permission.</p>
+                    <p>a honjaseo dijainhago mandeuneungeo jonna himdeulda syubal</p>
+                </div>
             </div>
         </footer>
     </div>
+
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(".payment").each(function(i, btn) {
+            $(btn).click(function() {
+                $(this).addClass("disable");
+                $(this).siblings().removeClass("disable");
+            })
+        })
+
+    </script>
 </body>
 </html>
